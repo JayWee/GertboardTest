@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="28fa039f-a19b-4bbe-becb-ae1f47d80f49"
+    Name="839efbc2-a2ae-4960-b007-de7ac0940756"
     Publisher="CN=Jonas Wagner"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="28fa039f-a19b-4bbe-becb-ae1f47d80f49" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="839efbc2-a2ae-4960-b007-de7ac0940756" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>GertboardTest</DisplayName>
+    <DisplayName>GertboardTest1</DisplayName>
     <PublisherDisplayName>Jonas Wagner</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="GertboardTest.App">
+      EntryPoint="GertboardTest1.App">
       <uap:VisualElements
-        DisplayName="GertboardTest"
+        DisplayName="GertboardTest1"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="GertboardTest"
+        Description="GertboardTest1"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

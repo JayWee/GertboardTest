@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -17,52 +17,13 @@ using Windows.Devices.Gpio;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace GertboardTest
+namespace GertboardTest1
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private int LED1 = 7;
-        private int LED2 = 8;
-        private int LED3 = 9;
-        private int LED4 = 10;
-        private int LED5 = 11;
-        private int LED6 = 17;
-        private int LED7 = 18;
-        private int LED8 = 27;
-        private int LED9 = 22;
-        private int LED10 = 23;
-        private int LED11 = 24;
-        private int LED12 = 25;
-        private int i = 500;
-        private GpioPin led1;
-        private GpioPin led2;
-        private GpioPin led3;
-        private GpioPin led4;
-        private GpioPin led5;
-        private GpioPin led6;
-        private GpioPin led7;
-        private GpioPin led8;
-        private GpioPin led9;
-        private GpioPin led10;
-        private GpioPin led11;
-        private GpioPin led12;
-        private GpioPinValue led1Value = GpioPinValue.Low;
-        private GpioPinValue led2Value = GpioPinValue.Low;
-        private GpioPinValue led3Value = GpioPinValue.Low;
-        private GpioPinValue led4Value = GpioPinValue.Low;
-        private GpioPinValue led5Value = GpioPinValue.Low;
-        private GpioPinValue led6Value = GpioPinValue.Low;
-        private GpioPinValue led7Value = GpioPinValue.Low;
-        private GpioPinValue led8Value = GpioPinValue.Low;
-        private GpioPinValue led9Value = GpioPinValue.Low;
-        private GpioPinValue led10Value = GpioPinValue.Low;
-        private GpioPinValue led11Value = GpioPinValue.Low;
-        private GpioPinValue led12Value = GpioPinValue.Low;
-        private DispatcherTimer timer;
-
         public MainPage()
         {
             this.InitializeComponent();
@@ -129,7 +90,7 @@ namespace GertboardTest
             if (i > 50)
             {
                 i = i - 50;
-            } 
+            }
         }
 
         private void InitGpio()
@@ -184,8 +145,47 @@ namespace GertboardTest
 
             led12.Write(GpioPinValue.Low);
             led12.SetDriveMode(GpioPinDriveMode.Output);
-            
+
 
         }
+        private int LED1 = 7;
+        private int LED2 = 8;
+        private int LED3 = 9;
+        private int LED4 = 10;
+        private int LED5 = 11;
+        private int LED6 = 17;
+        private int LED7 = 18;
+        private int LED8 = 27;
+        private int LED9 = 22;
+        private int LED10 = 23;
+        private int LED11 = 24;
+        private int LED12 = 25;
+        private int i = 500;
+        private GpioPin led1;
+        private GpioPin led2;
+        private GpioPin led3;
+        private GpioPin led4;
+        private GpioPin led5;
+        private GpioPin led6;
+        private GpioPin led7;
+        private GpioPin led8;
+        private GpioPin led9;
+        private GpioPin led10;
+        private GpioPin led11;
+        private GpioPin led12;
+        private GpioPinValue led1Value = GpioPinValue.Low;
+        private GpioPinValue led2Value = GpioPinValue.Low;
+        private GpioPinValue led3Value = GpioPinValue.Low;
+        private GpioPinValue led4Value = GpioPinValue.Low;
+        private GpioPinValue led5Value = GpioPinValue.Low;
+        private GpioPinValue led6Value = GpioPinValue.Low;
+        private GpioPinValue led7Value = GpioPinValue.Low;
+        private GpioPinValue led8Value = GpioPinValue.Low;
+        private GpioPinValue led9Value = GpioPinValue.Low;
+        private GpioPinValue led10Value = GpioPinValue.Low;
+        private GpioPinValue led11Value = GpioPinValue.Low;
+        private GpioPinValue led12Value = GpioPinValue.Low;
+        private DispatcherTimer timer;
     }
+    
 }
