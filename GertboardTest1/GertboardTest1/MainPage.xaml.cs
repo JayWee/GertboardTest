@@ -87,9 +87,9 @@ namespace GertboardTest1
             Task.Delay(i).Wait();
 
             led12.Write(GpioPinValue.Low);
-            if (i > 50)
+            if (i > 100)
             {
-                i = i - 50;
+                i = i - 5;
             }
         }
 
